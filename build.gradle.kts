@@ -25,6 +25,10 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    // util
+    implementation("com.google.guava:guava:32.1.2-jre") // in-memory cache 사용
+
 }
 
 tasks.withType<KotlinCompile> {
