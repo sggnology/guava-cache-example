@@ -26,6 +26,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
+    // db connector
+    implementation("com.mysql:mysql-connector-j")
+
+
     // util
     implementation("com.google.guava:guava:32.1.2-jre") // in-memory cache 사용
 
