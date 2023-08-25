@@ -15,6 +15,10 @@ class ConfigCacheLoader(
         return configRepository.findByKey(key) ?: throw RuntimeException("Config not found")
     }
 
+    /**
+     * 설명
+     * - 제공되는 keys 파라미터와 무관하게 모든 config 들을 로드한다.
+     * */
     override fun loadAll(keys: MutableIterable<String>): MutableMap<String, Config> {
         return loadAllConfigs()
     }
